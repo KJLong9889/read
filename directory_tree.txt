@@ -1,0 +1,2453 @@
+.
+│   release_instructions
+│   │   update-conda-recipes.md
+│   │   ReleaseInstructions.md
+│   │   add_links_to_release_notes.py
+│   CODE_OF_CONDUCT.md
+│   results
+│   │   AutogluonModels_industry_3AA0
+│   │   │   distribution_templo__linear_trend__attr_"intercept".png
+│   │   │   distribution_avgtemp__median.png
+│   │   │   distribution_templo__mean.png
+│   │   │   distribution_rhhi__mean_abs_change.png
+│   │   │   distribution_precip__mean_abs_change.png
+│   │   │   distribution_avgtemp__absolute_sum_of_changes.png
+│   │   │   distribution_temphi__variance.png
+│   │   │   distribution_avgtemp__variance.png
+│   │   │   distribution_avgtemp__root_mean_square.png
+│   │   │   distribution_templo__agg_linear_trend__attr_"slope"__chunk_len_10__f_agg_"mean".png
+│   │   │   distribution_temphi.png
+│   │   │   distribution_precip__median.png
+│   │   │   distribution_templo__maximum.png
+│   │   │   distribution_temphi__agg_linear_trend__attr_"slope"__chunk_len_10__f_agg_"mean".png
+│   │   │   distribution_precip__linear_trend__attr_"slope".png
+│   │   │   distribution_avgtemp.png
+│   │   │   distribution_templo__minimum.png
+│   │   │   distribution_windmax__mean.png
+│   │   │   distribution_avgtemp__linear_trend__attr_"slope".png
+│   │   │   distribution_avgtemp__mean_abs_change.png
+│   │   │   distribution_temphi__minimum.png
+│   │   │   distribution_rhhi__root_mean_square.png
+│   │   │   distribution_rhhi__maximum.png
+│   │   │   distribution_temphi__linear_trend__attr_"intercept".png
+│   │   │   distribution_avgtemp__standard_deviation.png
+│   │   │   distribution_precip__mean.png
+│   │   │   distribution_temphi__standard_deviation.png
+│   │   │   distribution_templo.png
+│   │   │   distribution_templo__median.png
+│   │   │   distribution_windmax__median.png
+│   │   │   distribution_windmaxdir__mean.png
+│   │   │   distribution_windmax__standard_deviation.png
+│   │   │   distribution_temphi__root_mean_square.png
+│   │   │   distribution_templo__root_mean_square.png
+│   │   │   distribution_temphi__agg_linear_trend__attr_"slope"__chunk_len_5__f_agg_"mean".png
+│   │   │   distribution_avgtemp__minimum.png
+│   │   │   analysis_industry_3AA0.png
+│   │   │   distribution_precip__standard_deviation.png
+│   │   │   distribution_windmax__linear_trend__attr_"intercept".png
+│   │   │   distribution_windmaxdir__median.png
+│   │   │   distribution_temphi__absolute_sum_of_changes.png
+│   │   │   distribution_windmaxdir__linear_trend__attr_"intercept".png
+│   │   │   distribution_temphi__mean_change.png
+│   │   │   distribution_value.png
+│   │   │   distribution_windmax__minimum.png
+│   │   │   distribution_temphi__mean.png
+│   │   │   distribution_templo__linear_trend__attr_"slope".png
+│   │   │   distribution_temphi__maximum.png
+│   │   │   distribution_windmaxdir.png
+│   │   │   distribution_avgtemp__agg_linear_trend__attr_"slope"__chunk_len_5__f_agg_"mean".png
+│   │   │   distribution_rhhi__linear_trend__attr_"intercept".png
+│   │   │   distribution_windmax__maximum.png
+│   │   │   distribution_templo__absolute_sum_of_changes.png
+│   │   │   distribution_temphi__median.png
+│   │   │   distribution_templo__mean_abs_change.png
+│   │   │   distribution_windmax.png
+│   │   │   distribution_precip__linear_trend__attr_"intercept".png
+│   │   │   distribution_windmax__root_mean_square.png
+│   │   │   distribution_precip__root_mean_square.png
+│   │   │   distribution_templo__mean_change.png
+│   │   │   distribution_rhhi.png
+│   │   │   distribution_temphi__mean_abs_change.png
+│   │   │   distribution_rhhi__median.png
+│   │   │   distribution_avgtemp__mean.png
+│   │   │   distribution_windmax__variance.png
+│   │   │   distribution_precip__agg_linear_trend__attr_"slope"__chunk_len_5__f_agg_"mean".png
+│   │   │   distribution_templo__cid_ce__normalize_True.png
+│   │   │   distribution_temphi__linear_trend__attr_"slope".png
+│   │   │   distribution_windmax__absolute_sum_of_changes.png
+│   │   │   distribution_rhhi__minimum.png
+│   │   │   distribution_avgtemp__maximum.png
+│   │   │   distribution_avgtemp__linear_trend__attr_"intercept".png
+│   │   │   distribution_windmaxdir__root_mean_square.png
+│   │   │   distribution_precip.png
+│   │   │   distribution_avgtemp__agg_linear_trend__attr_"slope"__chunk_len_10__f_agg_"mean".png
+│   │   │   distribution_avgtemp__mean_change.png
+│   │   │   distribution_precip__absolute_sum_of_changes.png
+│   │   │   distribution_precip__variance.png
+│   │   │   distribution_rhhi__standard_deviation.png
+│   │   │   distribution_precip__minimum.png
+│   │   │   distribution_precip__agg_linear_trend__attr_"slope"__chunk_len_10__f_agg_"mean".png
+│   │   │   distribution_windmax__mean_abs_change.png
+│   │   │   distribution_rhhi__mean.png
+│   │   │   distribution_rhhi__absolute_sum_of_changes.png
+│   │   │   distribution_templo__agg_linear_trend__attr_"slope"__chunk_len_5__f_agg_"mean".png
+│   │   │   distribution_rhhi__variance.png
+│   │   AutogluonModels_industry_4B00
+│   │   │   distribution_temphi.png
+│   │   │   analysis_industry_4B00.png
+│   │   │   distribution_avgtemp.png
+│   │   │   distribution_templo.png
+│   │   │   distribution_value.png
+│   │   │   distribution_windmaxdir.png
+│   │   │   distribution_windmax.png
+│   │   │   distribution_rhhi.png
+│   │   │   distribution_precip.png
+│   │   forecast_future
+│   │   │   just
+│   │   │   │   just_model_leaderboard.csv
+│   │   │   │   just_future_prediction.csv
+│   │   │   │   analysis_just.png
+│   │   │   │   distribution_value.png
+│   │   │   │   missing_rate_analysis.csv
+│   │   │   │   just_validation_predictions_all_models.csv
+│   │   │   prediction_status.csv
+│   │   │   industry_4B00
+│   │   │   │   distribution_temphi.png
+│   │   │   │   analysis_industry_4B00.png
+│   │   │   │   distribution_avgtemp.png
+│   │   │   │   distribution_templo.png
+│   │   │   │   correlation_analysis
+│   │   │   │   │   feature_correlations_pearson.png
+│   │   │   │   │   correlation_matrix_pearson.csv
+│   │   │   │   │   correlation_heatmap_pearson.png
+│   │   │   │   │   correlation_results_pearson.json
+│   │   │   │   industry_4B00_validation_predictions_all_models.csv
+│   │   │   │   distribution_value.png
+│   │   │   │   distribution_windmaxdir.png
+│   │   │   │   industry_4B00_future_prediction.csv
+│   │   │   │   distribution_windmax.png
+│   │   │   │   missing_rate_analysis.csv
+│   │   │   │   industry_4B00_model_leaderboard.csv
+│   │   │   │   distribution_rhhi.png
+│   │   │   │   distribution_precip.png
+│   │   │   industry_3AA0
+│   │   │   │   distribution_temphi.png
+│   │   │   │   distribution_avgtemp.png
+│   │   │   │   distribution_templo.png
+│   │   │   │   correlation_analysis
+│   │   │   │   │   feature_correlations_pearson.png
+│   │   │   │   │   correlation_matrix_pearson.csv
+│   │   │   │   │   correlation_heatmap_pearson.png
+│   │   │   │   │   correlation_results_pearson.json
+│   │   │   │   analysis_industry_3AA0.png
+│   │   │   │   distribution_value.png
+│   │   │   │   distribution_windmaxdir.png
+│   │   │   │   distribution_windmax.png
+│   │   │   │   missing_rate_analysis.csv
+│   │   │   │   distribution_rhhi.png
+│   │   │   │   distribution_precip.png
+│   │   │   │   industry_3AA0_future_prediction.csv
+│   │   │   │   industry_3AA0_validation_predictions_all_models.csv
+│   │   │   │   industry_3AA0_model_leaderboard.csv
+│   │   forecast
+│   Mserve
+│   │   mainv2.py
+│   │   main.py
+│   │   mainv3.py
+│   │   mainv5.py
+│   │   mainv4.py
+│   timeseries
+│   │   main.py
+│   │   src
+│   │   │   autogluon
+│   │   │   │   timeseries
+│   │   │   │   │   results_v2
+│   │   │   │   │   main.py
+│   │   │   │   │   transforms
+│   │   │   │   │   │   covariate_scaler.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   target_scaler.cpython-310.pyc
+│   │   │   │   │   │   │   covariate_scaler.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   target_scaler.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   configs
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   predictor_presets.cpython-310.pyc
+│   │   │   │   │   │   │   hyperparameter_presets.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   predictor_presets.py
+│   │   │   │   │   │   hyperparameter_presets.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   models
+│   │   │   │   │   │   autogluon_tabular
+│   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   per_step.py
+│   │   │   │   │   │   │   mlforecast.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   mlforecast.cpython-310.pyc
+│   │   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   transforms.cpython-310.pyc
+│   │   │   │   │   │   │   │   per_step.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   transforms.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   registry.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   local
+│   │   │   │   │   │   │   moving_average.py
+│   │   │   │   │   │   │   timexer_lib
+│   │   │   │   │   │   │   │   models
+│   │   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   │   TimeXer.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   S_mamba.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   S_mamba.py
+│   │   │   │   │   │   │   │   │   F_encoder
+│   │   │   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   │   │   TexFilter.cpython-38.pyc
+│   │   │   │   │   │   │   │   │   │   │   Tex_filter.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   │   Pai_Filter.cpython-38.pyc
+│   │   │   │   │   │   │   │   │   │   │   Tex_filter.cpython-38.pyc
+│   │   │   │   │   │   │   │   │   │   │   Pai_Filter.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   Pai_Filter.py
+│   │   │   │   │   │   │   │   │   │   Tex_filter.py
+│   │   │   │   │   │   │   │   │   TimeXer.py
+│   │   │   │   │   │   │   │   layers
+│   │   │   │   │   │   │   │   │   Embed.py
+│   │   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   │   Embed.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   SelfAttention_Family.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   SelfAttention_Family.py
+│   │   │   │   │   │   │   │   utils
+│   │   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   │   timefeatures.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   masking.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   masking.py
+│   │   │   │   │   │   │   │   │   timefeatures.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   abstract_local_model.py
+│   │   │   │   │   │   │   statsforecast.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   statsforecast.cpython-310.pyc
+│   │   │   │   │   │   │   │   ag_TimeXer.cpython-310.pyc
+│   │   │   │   │   │   │   │   moving_average.cpython-310.pyc
+│   │   │   │   │   │   │   │   npts.cpython-310.pyc
+│   │   │   │   │   │   │   │   abstract_local_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   naive.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   naive.py
+│   │   │   │   │   │   │   npts.py
+│   │   │   │   │   │   │   ag_TimeXer.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   gluonts
+│   │   │   │   │   │   │   models.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   models.cpython-310.pyc
+│   │   │   │   │   │   │   │   dataset.cpython-310.pyc
+│   │   │   │   │   │   │   dataset.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   toto
+│   │   │   │   │   │   │   model.py
+│   │   │   │   │   │   │   _internal
+│   │   │   │   │   │   │   │   README.txt
+│   │   │   │   │   │   │   │   LICENSE
+│   │   │   │   │   │   │   │   forecaster.py
+│   │   │   │   │   │   │   │   backbone
+│   │   │   │   │   │   │   │   │   rotary_embedding_torch.py
+│   │   │   │   │   │   │   │   │   kvcache.py
+│   │   │   │   │   │   │   │   │   scaler.py
+│   │   │   │   │   │   │   │   │   backbone.py
+│   │   │   │   │   │   │   │   │   attention.py
+│   │   │   │   │   │   │   │   │   rope.py
+│   │   │   │   │   │   │   │   │   transformer.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   distribution.py
+│   │   │   │   │   │   │   │   dataset.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   dataloader.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   hf_pretrained_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   chronos
+│   │   │   │   │   │   │   model.py
+│   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   chronos2.cpython-310.pyc
+│   │   │   │   │   │   │   │   model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   chronos2.py
+│   │   │   │   │   │   multi_window
+│   │   │   │   │   │   │   multi_window_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   multi_window_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   ensemble
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   per_item_greedy.cpython-310.pyc
+│   │   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   ensemble_selection.cpython-310.pyc
+│   │   │   │   │   │   │   ensemble_selection.py
+│   │   │   │   │   │   │   per_item_greedy.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   array_based
+│   │   │   │   │   │   │   │   models.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   models.cpython-310.pyc
+│   │   │   │   │   │   │   │   regressor
+│   │   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   │   per_quantile_tabular.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   tabular.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   │   linear_stacker.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   tabular.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   per_quantile_tabular.py
+│   │   │   │   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   │   │   │   linear_stacker.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   │   weighted
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   basic.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   greedy.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   basic.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   greedy.py
+│   │   │   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   registry.py
+│   │   │   │   │   │   abstract
+│   │   │   │   │   │   │   tunable.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tunable.cpython-310.pyc
+│   │   │   │   │   │   │   │   model_trial.cpython-310.pyc
+│   │   │   │   │   │   │   │   abstract_timeseries_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   model_trial.py
+│   │   │   │   │   │   │   abstract_timeseries_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   utils
+│   │   │   │   │   │   forecast.py
+│   │   │   │   │   │   features.py
+│   │   │   │   │   │   constants.py
+│   │   │   │   │   │   datetime
+│   │   │   │   │   │   │   lags.py
+│   │   │   │   │   │   │   base.py
+│   │   │   │   │   │   │   time_features.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   base.cpython-310.pyc
+│   │   │   │   │   │   │   │   time_features.cpython-310.pyc
+│   │   │   │   │   │   │   │   lags.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   seasonality.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   seasonality.py
+│   │   │   │   │   │   timer.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   timer.cpython-310.pyc
+│   │   │   │   │   │   │   constants.cpython-310.pyc
+│   │   │   │   │   │   │   forecast.cpython-310.pyc
+│   │   │   │   │   │   │   features.cpython-310.pyc
+│   │   │   │   │   │   │   warning_filters.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   warning_filters.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __pycache__
+│   │   │   │   │   │   regressor.cpython-310.pyc
+│   │   │   │   │   │   version.cpython-310.pyc
+│   │   │   │   │   │   learner.cpython-310.pyc
+│   │   │   │   │   │   predictor.cpython-310.pyc
+│   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   splitter.cpython-310.pyc
+│   │   │   │   │   regressor.py
+│   │   │   │   │   metrics
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   point.py
+│   │   │   │   │   │   quantile.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   point.cpython-310.pyc
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   quantile.cpython-310.pyc
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   abstract.py
+│   │   │   │   │   splitter.py
+│   │   │   │   │   predictor.py
+│   │   │   │   │   dataset
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   ts_dataframe.cpython-310.pyc
+│   │   │   │   │   │   ts_dataframe.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   learner.py
+│   │   │   │   │   trainer
+│   │   │   │   │   │   model_set_builder.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   prediction_cache.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   ensemble_composer.cpython-310.pyc
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   model_set_builder.cpython-310.pyc
+│   │   │   │   │   │   │   trainer.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   prediction_cache.cpython-310.pyc
+│   │   │   │   │   │   ensemble_composer.py
+│   │   │   │   │   │   trainer.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   version.py
+│   │   │   autogluon.timeseries.egg-info
+│   │   │   │   PKG-INFO
+│   │   │   │   namespace_packages.txt
+│   │   │   │   dependency_links.txt
+│   │   │   │   zip-safe
+│   │   │   │   SOURCES.txt
+│   │   │   │   top_level.txt
+│   │   │   │   requires.txt
+│   │   tests
+│   │   │   smoketests
+│   │   │   │   test_all_models.py
+│   │   │   │   __init__.py
+│   │   │   conftest.py
+│   │   │   unittests
+│   │   │   │   test_predictor.py
+│   │   │   │   test_metrics.py
+│   │   │   │   test_regressor.py
+│   │   │   │   conftest.py
+│   │   │   │   models
+│   │   │   │   │   test_abstract.py
+│   │   │   │   │   test_per_step_tabular.py
+│   │   │   │   │   test_registry.py
+│   │   │   │   │   test_multi_window_model.py
+│   │   │   │   │   conftest.py
+│   │   │   │   │   common.py
+│   │   │   │   │   test_models.py
+│   │   │   │   │   test_toto.py
+│   │   │   │   │   chronos
+│   │   │   │   │   │   test_utils.py
+│   │   │   │   │   │   test_chronos2.py
+│   │   │   │   │   │   test_model.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   ensemble
+│   │   │   │   │   │   test_abstract.py
+│   │   │   │   │   │   conftest.py
+│   │   │   │   │   │   test_weighted.py
+│   │   │   │   │   │   test_per_item_greedy.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   array_based
+│   │   │   │   │   │   │   test_abstract.py
+│   │   │   │   │   │   │   conftest.py
+│   │   │   │   │   │   │   test_models.py
+│   │   │   │   │   │   │   test_linear_stacker.py
+│   │   │   │   │   │   │   test_tabular.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   test_mlforecast.py
+│   │   │   │   │   test_local.py
+│   │   │   │   │   test_gluonts.py
+│   │   │   │   │   __init__.py
+│   │   │   │   common.py
+│   │   │   │   utils
+│   │   │   │   │   test_utils.py
+│   │   │   │   │   test_features.py
+│   │   │   │   │   test_timer.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_ts_dataset.py
+│   │   │   │   test_learner.py
+│   │   │   │   test_splitter.py
+│   │   │   │   __init__.py
+│   │   │   │   test_transforms.py
+│   │   │   │   trainer
+│   │   │   │   │   test_trainer.py
+│   │   │   │   │   test_model_set_builder.py
+│   │   │   │   │   test_ensemble_composer.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_prediction_cache.py
+│   │   │   __init__.py
+│   │   setup.py
+│   AutogluonModels
+│   │   AutogluonModels_industry_3AA0
+│   │   │   learner.pkl
+│   │   │   version.txt
+│   │   │   models
+│   │   │   │   Naive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SimpleAverageEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SeasonalNaive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   trainer.pkl
+│   │   │   │   WeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   cached_predictions.pkl
+│   │   │   │   PerItemWeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   MedianEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   Theta
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   DirectTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   RecursiveTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   ETS
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   utils
+│   │   │   │   data
+│   │   │   │   │   train.pkl
+│   │   │   logs
+│   │   │   │   predictor_log.txt
+│   │   │   predictor.pkl
+│   │   AutogluonModels_industry_4B00
+│   │   │   learner.pkl
+│   │   │   version.txt
+│   │   │   models
+│   │   │   │   Naive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SimpleAverageEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SeasonalNaive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   trainer.pkl
+│   │   │   │   WeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   cached_predictions.pkl
+│   │   │   │   PerItemWeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   MedianEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   Theta
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   DirectTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   RecursiveTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   ETS
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   utils
+│   │   │   │   data
+│   │   │   │   │   train.pkl
+│   │   │   logs
+│   │   │   │   predictor_log.txt
+│   │   │   predictor.pkl
+│   │   AutogluonModels_just
+│   │   │   learner.pkl
+│   │   │   version.txt
+│   │   │   models
+│   │   │   │   Naive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SimpleAverageEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   SeasonalNaive
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   trainer.pkl
+│   │   │   │   WeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   cached_predictions.pkl
+│   │   │   │   PerItemWeightedEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   MedianEnsemble
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   Theta
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   DirectTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   RecursiveTabular
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   │   ETS
+│   │   │   │   │   W0
+│   │   │   │   │   │   model.pkl
+│   │   │   │   │   model.pkl
+│   │   │   │   │   utils
+│   │   │   │   │   │   oof.pkl
+│   │   │   utils
+│   │   │   │   data
+│   │   │   │   │   train.pkl
+│   │   │   logs
+│   │   │   │   predictor_log.txt
+│   │   │   predictor.pkl
+│   .env
+│   CONTRIBUTING.md
+│   README.md
+│   autogluon
+│   │   src
+│   │   │   autogluon
+│   │   │   │   _internal_
+│   │   │   │   │   __init__.py
+│   │   setup.py
+│   tree.py
+│   multimodal
+│   │   src
+│   │   │   autogluon
+│   │   │   │   multimodal
+│   │   │   │   │   cli
+│   │   │   │   │   │   prepare_detection_dataset.py
+│   │   │   │   │   │   voc2coco.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   learners
+│   │   │   │   │   │   object_detection.py
+│   │   │   │   │   │   few_shot_svm.py
+│   │   │   │   │   │   base.py
+│   │   │   │   │   │   ner.py
+│   │   │   │   │   │   semantic_segmentation.py
+│   │   │   │   │   │   ensemble.py
+│   │   │   │   │   │   matching.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   configs
+│   │   │   │   │   │   model
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   │   env
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   │   optim
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   │   data
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   │   distiller
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   │   pretrain
+│   │   │   │   │   │   │   detection
+│   │   │   │   │   │   │   │   dino
+│   │   │   │   │   │   │   │   │   dino_swinl_tta.py
+│   │   │   │   │   │   │   │   │   dino_tta.py
+│   │   │   │   │   │   │   │   │   dino-4scale_r50_8xb2-12e_coco.py
+│   │   │   │   │   │   │   │   │   dino-5scale_swin-l_8xb2-12e_coco.py
+│   │   │   │   │   │   │   │   │   dino-5scale_swin-l_8xb2-36e_coco.py
+│   │   │   │   │   │   │   │   faster_rcnn
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   faster_rcnn_r50_fpn.py
+│   │   │   │   │   │   │   │   coco_detection.py
+│   │   │   │   │   │   │   │   yolox
+│   │   │   │   │   │   │   │   │   yolox_l_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   │   yolox_tta.py
+│   │   │   │   │   │   │   │   │   yolox_tiny_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   │   yolox_s_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   │   yolox_m_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   │   yolox_nano_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   yolox_x_8xb8-300e_coco.py
+│   │   │   │   │   │   │   │   default_runtime.py
+│   │   │   │   │   │   │   │   schedule_1x.py
+│   │   │   │   │   │   │   │   voc
+│   │   │   │   │   │   │   │   │   voc0712.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   faster_rcnn_r50_fpn_1x_voc0712.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   matcher
+│   │   │   │   │   │   │   default.yaml
+│   │   │   │   │   constants.py
+│   │   │   │   │   models
+│   │   │   │   │   │   mmocr_text_detection.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   numerical_mlp.py
+│   │   │   │   │   │   mmdet_image.py
+│   │   │   │   │   │   fusion
+│   │   │   │   │   │   │   base.py
+│   │   │   │   │   │   │   fusion_mlp.py
+│   │   │   │   │   │   │   fusion_transformer.py
+│   │   │   │   │   │   │   fusion_ner.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   ner_text.py
+│   │   │   │   │   │   t_few.py
+│   │   │   │   │   │   mmocr_text_recognition.py
+│   │   │   │   │   │   meta_transformer.py
+│   │   │   │   │   │   timm_image.py
+│   │   │   │   │   │   adaptation_layers.py
+│   │   │   │   │   │   augmenter.py
+│   │   │   │   │   │   hf_text.py
+│   │   │   │   │   │   document_transformer.py
+│   │   │   │   │   │   custom_transformer.py
+│   │   │   │   │   │   sam.py
+│   │   │   │   │   │   clip.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   mlp.py
+│   │   │   │   │   │   categorical_mlp.py
+│   │   │   │   │   │   custom_hf_models
+│   │   │   │   │   │   │   modeling_sam_for_conv_lora.py
+│   │   │   │   │   │   ft_transformer.py
+│   │   │   │   │   optim
+│   │   │   │   │   │   lit_distiller.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   lit_module.py
+│   │   │   │   │   │   lit_semantic_seg.py
+│   │   │   │   │   │   lit_matcher.py
+│   │   │   │   │   │   metrics
+│   │   │   │   │   │   │   ranking_metrics.py
+│   │   │   │   │   │   │   hit_rate_metrics.py
+│   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   coverage_metrics.py
+│   │   │   │   │   │   │   semantic_seg_metrics.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   lr
+│   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   lr_schedulers.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   lit_ner.py
+│   │   │   │   │   │   deepspeed.py
+│   │   │   │   │   │   lit_mmdet.py
+│   │   │   │   │   │   losses
+│   │   │   │   │   │   │   lemda_loss.py
+│   │   │   │   │   │   │   structure_loss.py
+│   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   focal_loss.py
+│   │   │   │   │   │   │   softmax_losses.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   bce_loss.py
+│   │   │   │   │   │   │   rkd_loss.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   utils
+│   │   │   │   │   │   load.py
+│   │   │   │   │   │   object_detection.py
+│   │   │   │   │   │   label_studio.py
+│   │   │   │   │   │   device.py
+│   │   │   │   │   │   visualizer.py
+│   │   │   │   │   │   env.py
+│   │   │   │   │   │   log.py
+│   │   │   │   │   │   config.py
+│   │   │   │   │   │   matcher.py
+│   │   │   │   │   │   presets.py
+│   │   │   │   │   │   problem_types.py
+│   │   │   │   │   │   export.py
+│   │   │   │   │   │   inference.py
+│   │   │   │   │   │   download.py
+│   │   │   │   │   │   checkpoint.py
+│   │   │   │   │   │   hpo.py
+│   │   │   │   │   │   colormap.py
+│   │   │   │   │   │   misc.py
+│   │   │   │   │   │   strategy.py
+│   │   │   │   │   │   cache.py
+│   │   │   │   │   │   precision.py
+│   │   │   │   │   │   path.py
+│   │   │   │   │   │   mmcv.py
+│   │   │   │   │   │   install.py
+│   │   │   │   │   │   save.py
+│   │   │   │   │   │   distillation.py
+│   │   │   │   │   │   registry.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   onnx.py
+│   │   │   │   │   data
+│   │   │   │   │   │   infer_types.py
+│   │   │   │   │   │   process_mmlab
+│   │   │   │   │   │   │   process_mmocr.py
+│   │   │   │   │   │   │   process_mmdet.py
+│   │   │   │   │   │   │   process_mmlab_base.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   nlpaug.py
+│   │   │   │   │   │   collator.py
+│   │   │   │   │   │   process_categorical.py
+│   │   │   │   │   │   mixup.py
+│   │   │   │   │   │   process_semantic_seg_img.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   datamodule.py
+│   │   │   │   │   │   process_label.py
+│   │   │   │   │   │   process_image.py
+│   │   │   │   │   │   preprocess_dataframe.py
+│   │   │   │   │   │   dataset.py
+│   │   │   │   │   │   label_encoder.py
+│   │   │   │   │   │   templates.py
+│   │   │   │   │   │   dataset_mmlab
+│   │   │   │   │   │   │   multi_image_mix_dataset.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   process_text.py
+│   │   │   │   │   │   process_document.py
+│   │   │   │   │   │   template_engine.py
+│   │   │   │   │   │   process_numerical.py
+│   │   │   │   │   │   randaug.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   trivial_augmenter.py
+│   │   │   │   │   │   process_ner.py
+│   │   │   │   │   predictor.py
+│   │   │   │   │   __init__.py
+│   │   tests
+│   │   │   README.md
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   unittests
+│   │   │   │   predictor
+│   │   │   │   │   test_predictor.py
+│   │   │   │   │   __init__.py
+│   │   │   │   utils
+│   │   │   │   │   utils.py
+│   │   │   │   │   unittest_datasets.py
+│   │   │   │   │   __init__.py
+│   │   │   │   others
+│   │   │   │   │   test_process_text.py
+│   │   │   │   │   test_dump_model.py
+│   │   │   │   │   test_extract_features.py
+│   │   │   │   │   test_preprocess_data.py
+│   │   │   │   │   test_metrics.py
+│   │   │   │   │   test_process_multimodal.py
+│   │   │   │   │   test_registry.py
+│   │   │   │   │   test_semantic_segmentation.py
+│   │   │   │   │   test_process_images.py
+│   │   │   │   │   test_ensemble.py
+│   │   │   │   │   test_save.py
+│   │   │   │   │   test_deployment_onnx.py
+│   │   │   │   │   test_object_detection.py
+│   │   │   │   │   test_ner.py
+│   │   │   │   │   test_losses.py
+│   │   │   │   │   test_backbones.py
+│   │   │   │   │   test_data_collators.py
+│   │   │   │   │   test_presets.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_matcher.py
+│   │   │   │   │   test_load.py
+│   │   │   │   others_2
+│   │   │   │   │   test_problem_types.py
+│   │   │   │   │   test_config.py
+│   │   │   │   │   test_zero_shot.py
+│   │   │   │   │   test_ner_chinese.py
+│   │   │   │   │   test_distiller.py
+│   │   │   │   │   test_text_recognition.py
+│   │   │   │   │   test_custom_hparams.py
+│   │   │   │   │   test_tokenizers.py
+│   │   │   │   │   test_few_shot.py
+│   │   │   │   │   test_custom_training.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_classify_doc.py
+│   │   │   │   │   test_image_formats.py
+│   │   │   │   │   test_text_detection.py
+│   │   │   │   │   test_hpo.py
+│   │   │   │   __init__.py
+│   │   │   hf_model_list.yaml
+│   │   │   __init__.py
+│   │   setup.py
+│   LICENSE
+│   .idea
+│   │   .gitignore
+│   │   misc.xml
+│   │   inspectionProfiles
+│   │   │   profiles_settings.xml
+│   │   autogluon-master.iml
+│   │   workspace.xml
+│   │   modules.xml
+│   examples
+│   │   image_regression
+│   │   │   demo.py
+│   │   tabular
+│   │   │   tabular-fasttext.ipynb
+│   │   │   example_simple_tabular.py
+│   │   │   example_mitra.py
+│   │   │   example_advanced_tabular.py
+│   │   │   interpret
+│   │   │   │   SHAP with AutoGluon-Tabular.ipynb
+│   │   │   │   SHAP with AutoGluon-Tabular Census income classification.ipynb
+│   │   │   │   SHAP with AutoGluon-Tabular Diabetes regression.ipynb
+│   │   │   example_custom_feature_generator.py
+│   │   │   example_quantile_regression.py
+│   │   │   example_custom_model_tabular.py
+│   │   │   distill
+│   │   │   │   example_distill_binary.py
+│   │   automm
+│   │   │   Conv-LoRA
+│   │   │   │   README.md
+│   │   │   │   prepare_semantic_segmentation_datasets.py
+│   │   │   │   run_semantic_segmentation.py
+│   │   │   label_studio_export_reader
+│   │   │   │   LabelStudio_export_file_reader.md
+│   │   │   │   assets
+│   │   │   │   │   image-20221230230606344.png
+│   │   │   │   │   image-20221230233113119.png
+│   │   │   │   │   image-20221230230403853.png
+│   │   │   │   │   image-20221230232839988.png
+│   │   │   │   │   image-20221230233443558.png
+│   │   │   memory_bank
+│   │   │   │   README.md
+│   │   │   │   utils.py
+│   │   │   │   memory_bank.py
+│   │   │   kaggle_feedback_prize
+│   │   │   │   README.md
+│   │   │   │   kaggle_feedback_prize_submit.py
+│   │   │   │   kaggle_feedback_prize_preprocess.py
+│   │   │   │   kaggle_feedback_prize_train.py
+│   │   │   production
+│   │   │   │   onnx_text.py
+│   │   │   text_prediction
+│   │   │   │   run_text_prediction.py
+│   │   │   │   README.md
+│   │   │   │   run_competition.py
+│   │   │   │   prepare_data_scientist_salary.sh
+│   │   │   │   prepare_price_of_books.sh
+│   │   │   │   prepare_glue.py
+│   │   │   │   url_checksums
+│   │   │   │   │   superglue.txt
+│   │   │   │   │   glue.txt
+│   │   │   │   generate_submission.py
+│   │   │   │   prepare_mercari_kaggle.sh
+│   │   │   │   run_glue.sh
+│   │   │   distillation
+│   │   │   │   README.md
+│   │   │   │   automm_distillation_pawsx.py
+│   │   │   │   automm_distillation_glue.py
+│   │   │   │   eval_pawsx.py
+│   │   │   tabular_dl
+│   │   │   │   run_all.sh
+│   │   │   │   README.md
+│   │   │   │   example_tabular.py
+│   │   │   │   dataset.py
+│   │   │   object_detection
+│   │   │   │   inference_pretrained_coco_format.py
+│   │   │   │   detection_train.py
+│   │   │   │   quick_start_on_a_tiny_dataset.py
+│   │   │   │   load_predictor.py
+│   │   │   │   eval_pretrained_voc_format.py
+│   │   │   │   download_coco17.sh
+│   │   │   │   detection_eval.py
+│   │   │   │   finetune_on_pothole_dataset.py
+│   │   │   │   benchmarking.py
+│   │   │   │   download_voc0712.sh
+│   │   │   │   visualize_results.py
+│   │   │   │   download_watercolor.sh
+│   │   │   │   download_voc07.sh
+│   │   │   │   inference_pretrained_voc_format.py
+│   │   │   │   eval_pretrained_coco_format.py
+│   │   │   │   detection_inference.py
+│   │   │   │   download_voc12.sh
+│   │   │   │   pretrain_objects365.py
+│   │   │   │   finetune_coco_format.py
+│   │   │   │   detection_load.py
+│   │   │   TCGA_cancer_survival
+│   │   │   │   README.md
+│   │   │   │   example_cancer_survival.py
+│   │   │   pipeline
+│   │   │   │   feature_extraction_example.py
+│   │   │   kaggle_pawpularity
+│   │   │   │   kaggle_pawpularity_train.py
+│   │   │   │   README.md
+│   │   │   │   kaggle_pawpularity_submit.py
+│   │   │   kaggle_california_house_price
+│   │   │   │   README.md
+│   │   │   │   example_kaggle_house.py
+│   .gitignore
+│   temp_output
+│   tabular
+│   │   src
+│   │   │   autogluon
+│   │   │   │   tabular
+│   │   │   │   │   testing
+│   │   │   │   │   │   generate_datasets.py
+│   │   │   │   │   │   fit_helper.py
+│   │   │   │   │   │   model_fit_helper.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   predictor
+│   │   │   │   │   │   interpretable_predictor.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   interpretable_predictor.cpython-310.pyc
+│   │   │   │   │   │   │   predictor.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   predictor.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   experimental
+│   │   │   │   │   │   plot_leaderboard.py
+│   │   │   │   │   │   _scikit_mixin.py
+│   │   │   │   │   │   _tabular_regressor.py
+│   │   │   │   │   │   _tabular_classifier.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   configs
+│   │   │   │   │   │   hyperparameter_configs.py
+│   │   │   │   │   │   feature_generator_presets.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   pipeline_presets.cpython-310.pyc
+│   │   │   │   │   │   │   feature_generator_presets.cpython-310.pyc
+│   │   │   │   │   │   │   presets_configs.cpython-310.pyc
+│   │   │   │   │   │   │   hyperparameter_configs.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   presets_configs.py
+│   │   │   │   │   │   zeroshot
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   zeroshot_portfolio_2023.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   zeroshot_portfolio_2025.cpython-310.pyc
+│   │   │   │   │   │   │   zeroshot_portfolio_2025.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   zeroshot_portfolio_2023.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   pipeline_presets.py
+│   │   │   │   │   │   config_helper.py
+│   │   │   │   │   models
+│   │   │   │   │   │   lgb
+│   │   │   │   │   │   │   lgb_utils.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   callbacks.cpython-310.pyc
+│   │   │   │   │   │   │   │   lgb_utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   lgb_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   lgb_model.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   ebm
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   ebm_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   ebm_model.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   _utils
+│   │   │   │   │   │   │   torch_utils.py
+│   │   │   │   │   │   │   rapids_utils.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   xgboost
+│   │   │   │   │   │   │   xgboost_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   xgboost_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   xgboost_utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   xgboost_utils.py
+│   │   │   │   │   │   tabular_nn
+│   │   │   │   │   │   │   torch
+│   │   │   │   │   │   │   │   tabular_torch_dataset.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   tabular_nn_torch.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   torch_network_modules.py
+│   │   │   │   │   │   │   │   tabular_nn_torch.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   utils
+│   │   │   │   │   │   │   │   categorical_encoders.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   categorical_encoders.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   data_preprocessor.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   nn_architecture_utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   nn_architecture_utils.py
+│   │   │   │   │   │   │   │   data_preprocessor.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   compilers
+│   │   │   │   │   │   │   │   native.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   native.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   onnx.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   onnx.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   mitra
+│   │   │   │   │   │   │   _internal
+│   │   │   │   │   │   │   │   models
+│   │   │   │   │   │   │   │   │   base.py
+│   │   │   │   │   │   │   │   │   tab2d.py
+│   │   │   │   │   │   │   │   │   embedding.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   utils
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   set_seed.py
+│   │   │   │   │   │   │   │   data
+│   │   │   │   │   │   │   │   │   collator.py
+│   │   │   │   │   │   │   │   │   dataset_finetune.py
+│   │   │   │   │   │   │   │   │   dataset_split.py
+│   │   │   │   │   │   │   │   │   preprocessor.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   config
+│   │   │   │   │   │   │   │   │   config_run.py
+│   │   │   │   │   │   │   │   │   config_pretrain.py
+│   │   │   │   │   │   │   │   │   enums.py
+│   │   │   │   │   │   │   │   │   tab2d.yaml
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   core
+│   │   │   │   │   │   │   │   │   prediction_metrics.py
+│   │   │   │   │   │   │   │   │   get_loss.py
+│   │   │   │   │   │   │   │   │   get_optimizer.py
+│   │   │   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   │   │   get_scheduler.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   trainer_finetune.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   mitra_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   sklearn_interface.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   mitra_model.py
+│   │   │   │   │   │   text_prediction
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   text_prediction_v1_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   text_prediction_v1_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   tabm
+│   │   │   │   │   │   │   tabm_reference.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tabm_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   rtdl_num_embeddings.py
+│   │   │   │   │   │   │   _tabm_internal.py
+│   │   │   │   │   │   │   tabm_model.py
+│   │   │   │   │   │   knn
+│   │   │   │   │   │   │   knn_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   knn_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   _knn_loo_variants.py
+│   │   │   │   │   │   │   knn_utils.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   knn_rapids_model.py
+│   │   │   │   │   │   image_prediction
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   image_predictor.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   image_predictor.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   lr
+│   │   │   │   │   │   │   lr_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   lr_preprocessing_utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   lr_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   lr_rapids_model.py
+│   │   │   │   │   │   │   lr_preprocessing_utils.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   xt
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   xt_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   xt_model.py
+│   │   │   │   │   │   tabpfnv2
+│   │   │   │   │   │   │   tabpfnv2_model.py
+│   │   │   │   │   │   │   rfpfn
+│   │   │   │   │   │   │   │   scoring_utils.py
+│   │   │   │   │   │   │   │   utils.py
+│   │   │   │   │   │   │   │   sklearn_compat.py
+│   │   │   │   │   │   │   │   sklearn_based_random_forest_tabpfn.py
+│   │   │   │   │   │   │   │   configs.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   sklearn_based_decision_tree_tabpfn.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tabpfnv2_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   tabicl
+│   │   │   │   │   │   │   tabicl_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tabicl_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   imodels
+│   │   │   │   │   │   │   imodels_models.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   imodels_models.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   realmlp
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   realmlp_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   realmlp_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   catboost
+│   │   │   │   │   │   │   catboost_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   callbacks.cpython-310.pyc
+│   │   │   │   │   │   │   │   catboost_utils.cpython-310.pyc
+│   │   │   │   │   │   │   │   catboost_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   catboost_softclass_utils.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   catboost_utils.py
+│   │   │   │   │   │   rf
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   rf_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   rf_model.py
+│   │   │   │   │   │   │   rf_quantile.py
+│   │   │   │   │   │   │   compilers
+│   │   │   │   │   │   │   │   native.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   native.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   onnx.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   onnx.py
+│   │   │   │   │   │   │   rf_rapids_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   tabpfnmix
+│   │   │   │   │   │   │   _internal
+│   │   │   │   │   │   │   │   results
+│   │   │   │   │   │   │   │   │   prediction_metrics.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   README.md
+│   │   │   │   │   │   │   │   tabpfnmix_classifier.py
+│   │   │   │   │   │   │   │   LICENSE
+│   │   │   │   │   │   │   │   models
+│   │   │   │   │   │   │   │   │   foundation
+│   │   │   │   │   │   │   │   │   │   foundation_transformer.py
+│   │   │   │   │   │   │   │   │   │   embedding.py
+│   │   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   tabpfnmix_regressor.py
+│   │   │   │   │   │   │   │   data
+│   │   │   │   │   │   │   │   │   dataset_finetune.py
+│   │   │   │   │   │   │   │   │   preprocessor.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   config
+│   │   │   │   │   │   │   │   │   config_run.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   core
+│   │   │   │   │   │   │   │   │   y_transformer.py
+│   │   │   │   │   │   │   │   │   collator.py
+│   │   │   │   │   │   │   │   │   enums.py
+│   │   │   │   │   │   │   │   │   get_loss.py
+│   │   │   │   │   │   │   │   │   get_optimizer.py
+│   │   │   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   │   │   dataset_split.py
+│   │   │   │   │   │   │   │   │   get_scheduler.py
+│   │   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   │   │   trainer_finetune.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tabpfnmix_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   tabpfnmix_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   fasttext
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   fasttext_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   fasttext_model.py
+│   │   │   │   │   │   fastainn
+│   │   │   │   │   │   │   imports_helper.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   tabular_nn_fastai.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   fastai_helpers.py
+│   │   │   │   │   │   │   hyperparameters
+│   │   │   │   │   │   │   │   parameters.py
+│   │   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   │   searchspaces.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   parameters.cpython-310.pyc
+│   │   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   searchspaces.py
+│   │   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   callbacks.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   quantile_helpers.py
+│   │   │   │   │   │   │   tabular_nn_fastai.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   automm
+│   │   │   │   │   │   │   automm_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   ft_transformer.cpython-310.pyc
+│   │   │   │   │   │   │   │   automm_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   ft_transformer.py
+│   │   │   │   │   __pycache__
+│   │   │   │   │   │   version.cpython-310.pyc
+│   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   registry
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   _ag_model_registry.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   _model_registry.cpython-310.pyc
+│   │   │   │   │   │   _model_registry.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   _ag_model_registry.py
+│   │   │   │   │   tuning
+│   │   │   │   │   │   feature_pruner.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   learner
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   default_learner.cpython-310.pyc
+│   │   │   │   │   │   │   abstract_learner.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   default_learner.py
+│   │   │   │   │   │   abstract_learner.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   trainer
+│   │   │   │   │   │   abstract_trainer.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   abstract_trainer.cpython-310.pyc
+│   │   │   │   │   │   │   auto_trainer.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   auto_trainer.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   model_presets
+│   │   │   │   │   │   │   presets.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   presets_distill.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   presets.cpython-310.pyc
+│   │   │   │   │   │   │   presets_distill.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   version.py
+│   │   │   autogluon.tabular.egg-info
+│   │   │   │   PKG-INFO
+│   │   │   │   namespace_packages.txt
+│   │   │   │   dependency_links.txt
+│   │   │   │   zip-safe
+│   │   │   │   SOURCES.txt
+│   │   │   │   top_level.txt
+│   │   │   │   requires.txt
+│   │   tests
+│   │   │   regressiontests
+│   │   │   │   utils.py
+│   │   │   │   test_tabular_regression.py
+│   │   │   │   test_tabular_lite.py
+│   │   │   │   __init__.py
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   unittests
+│   │   │   │   edgecases
+│   │   │   │   │   test_edgecases.py
+│   │   │   │   │   __init__.py
+│   │   │   │   experimental
+│   │   │   │   │   test_scikit_api.py
+│   │   │   │   │   __init__.py
+│   │   │   │   configs
+│   │   │   │   │   test_config_helper.py
+│   │   │   │   │   test_pipline_presets.py
+│   │   │   │   │   test_presets.py
+│   │   │   │   │   __init__.py
+│   │   │   │   models
+│   │   │   │   │   advanced
+│   │   │   │   │   │   test_bagged_deterministic.py
+│   │   │   │   │   │   test_model_random_seed.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   test_refit_full.py
+│   │   │   │   │   │   test_stack_feature_usage.py
+│   │   │   │   │   test_xt.py
+│   │   │   │   │   test_tabpfnv2.py
+│   │   │   │   │   test_catboost.py
+│   │   │   │   │   test_automm.py
+│   │   │   │   │   test_lightgbm.py
+│   │   │   │   │   test_tabm.py
+│   │   │   │   │   test_text_prediction_v1_model.py
+│   │   │   │   │   test_xgboost.py
+│   │   │   │   │   test_image_predictor.py
+│   │   │   │   │   test_knn.py
+│   │   │   │   │   test_tabular_nn.py
+│   │   │   │   │   test_tabular_nn_fastai.py
+│   │   │   │   │   test_mitra.py
+│   │   │   │   │   test_advanced.py
+│   │   │   │   │   test_rf.py
+│   │   │   │   │   test_linear.py
+│   │   │   │   │   test_tabicl.py
+│   │   │   │   │   test_dummy.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_realmlp.py
+│   │   │   │   │   test_ebm.py
+│   │   │   │   resource_allocation
+│   │   │   │   │   test_bagging_resource_allocation.py
+│   │   │   │   │   test_hpo_resource_allocation.py
+│   │   │   │   │   test_total_resource_allocation.py
+│   │   │   │   │   test_resources_mocking.py
+│   │   │   │   │   test_resource_allocation_combined.py
+│   │   │   │   │   test_custom_memory_limit.py
+│   │   │   │   │   __init__.py
+│   │   │   │   registry
+│   │   │   │   │   test_model_registry.py
+│   │   │   │   │   __init__.py
+│   │   │   │   data
+│   │   │   │   │   test_label_cleaner.py
+│   │   │   │   │   test_learning_curves.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_tabular.py
+│   │   │   │   callbacks
+│   │   │   │   │   test_callbacks.py
+│   │   │   │   │   __init__.py
+│   │   │   │   pseudolabel
+│   │   │   │   │   pseudo_filter.py
+│   │   │   │   │   __init__.py
+│   │   │   │   __init__.py
+│   │   │   │   calibrate
+│   │   │   │   │   test_calibrate.py
+│   │   │   │   │   __init__.py
+│   │   │   │   dynamic_stacking
+│   │   │   │   │   test_dynamic_stacking.py
+│   │   │   │   │   __init__.py
+│   │   │   __init__.py
+│   │   setup.py
+│   serve_generator.py
+│   CITING.md
+│   VERSION.minor
+│   directory_tree.txt
+│   CI
+│   │   docker
+│   │   │   login_ecr.sh
+│   │   │   Dockerfile.cpu-training
+│   │   │   full_install_image.sh
+│   │   │   Dockerfile.cpu-inference
+│   │   │   Dockerfile.gpu-training
+│   │   │   Dockerfile.gpu-inference
+│   │   hf_mirror
+│   │   │   Dockerfile
+│   │   │   deploy.sh
+│   │   │   download_hf_models.sh
+│   │   │   download_hf_models.py
+│   │   bench
+│   │   │   evaluate.py
+│   │   │   timeseries
+│   │   │   │   amlb_user_dir
+│   │   │   │   │   frameworks_template.yaml
+│   │   │   │   │   config.yaml
+│   │   │   │   │   benchmarks
+│   │   │   │   │   │   timeseries_small.yaml
+│   │   │   │   │   constraints.yaml
+│   │   │   generate_framework.py
+│   │   │   generate_amlb_user_dir.sh
+│   │   │   multimodal
+│   │   │   │   custom_user_dir
+│   │   │   │   │   multimodal_frameworks_template.yaml
+│   │   │   │   │   multimodal_constraints.yaml
+│   │   │   tabular
+│   │   │   │   amlb_user_dir
+│   │   │   │   │   setup_hf_cache.py
+│   │   │   │   │   frameworks_template.yaml
+│   │   │   │   │   config.yaml
+│   │   │   │   │   benchmarks
+│   │   │   │   │   │   tabular_full.yaml
+│   │   │   │   │   │   tabular_test.yaml
+│   │   │   │   │   │   tabular_small.yaml
+│   │   │   │   │   constraints.yaml
+│   │   │   generate_bench_config.sh
+│   │   batch
+│   │   │   docker
+│   │   │   │   README.md
+│   │   │   │   Dockerfile.gpu
+│   │   │   │   Dockerfile.cpu
+│   │   │   │   docker_deploy.sh
+│   │   │   │   Dockerfile.pyodide
+│   │   │   │   autogluon_job.sh
+│   │   │   submit-job.py
+│   │   │   cancel-job.py
+│   pyproject.toml
+│   AWESOME.md
+│   serve_all
+│   │   models
+│   │   │   ts_model.py
+│   │   │   __init__.py
+│   │   main_serve.py
+│   │   __init__.py
+│   │   post_serve
+│   │   │   ts_post.py
+│   VERSION
+│   0126main.py
+│   full_install.bat
+│   clear_database.py
+│   NOTICE
+│   causal_conv1d-1.5.0.post8+cu11torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+│   data1
+│   │   just.csv
+│   serve_post_generator.py
+│   mamba_ssm-2.2.3+cu11torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+│   common
+│   │   src
+│   │   │   autogluon
+│   │   │   │   common
+│   │   │   │   │   loaders
+│   │   │   │   │   │   load_pd.py
+│   │   │   │   │   │   load_str.py
+│   │   │   │   │   │   load_zip.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   load_pd.cpython-310.pyc
+│   │   │   │   │   │   │   load_s3.cpython-310.pyc
+│   │   │   │   │   │   │   load_zip.cpython-310.pyc
+│   │   │   │   │   │   │   load_json.cpython-310.pyc
+│   │   │   │   │   │   │   load_pkl.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   load_str.cpython-310.pyc
+│   │   │   │   │   │   load_s3.py
+│   │   │   │   │   │   _utils.py
+│   │   │   │   │   │   load_json.py
+│   │   │   │   │   │   load_pkl.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   utils
+│   │   │   │   │   │   context.py
+│   │   │   │   │   │   nvutil.py
+│   │   │   │   │   │   multiprocessing_utils.py
+│   │   │   │   │   │   hyperparameter_utils.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   compression_utils.py
+│   │   │   │   │   │   simulation_utils.py
+│   │   │   │   │   │   distribute_utils.py
+│   │   │   │   │   │   lite.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   system_info.cpython-310.pyc
+│   │   │   │   │   │   │   cpu_utils.cpython-310.pyc
+│   │   │   │   │   │   │   distribute_utils.cpython-310.pyc
+│   │   │   │   │   │   │   hyperparameter_utils.cpython-310.pyc
+│   │   │   │   │   │   │   deprecated_utils.cpython-310.pyc
+│   │   │   │   │   │   │   file_utils.cpython-310.pyc
+│   │   │   │   │   │   │   try_import.cpython-310.pyc
+│   │   │   │   │   │   │   s3_utils.cpython-310.pyc
+│   │   │   │   │   │   │   resource_utils.cpython-310.pyc
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   lite.cpython-310.pyc
+│   │   │   │   │   │   │   pandas_utils.cpython-310.pyc
+│   │   │   │   │   │   │   nvutil.cpython-310.pyc
+│   │   │   │   │   │   │   log_utils.cpython-310.pyc
+│   │   │   │   │   │   │   compression_utils.cpython-310.pyc
+│   │   │   │   │   │   │   multiprocessing_utils.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   s3_utils.py
+│   │   │   │   │   │   resource_utils.py
+│   │   │   │   │   │   system_info.py
+│   │   │   │   │   │   path_converter.py
+│   │   │   │   │   │   file_utils.py
+│   │   │   │   │   │   try_import.py
+│   │   │   │   │   │   pandas_utils.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   cpu_utils.py
+│   │   │   │   │   │   deprecated_utils.py
+│   │   │   │   │   │   log_utils.py
+│   │   │   │   │   __pycache__
+│   │   │   │   │   │   version.cpython-310.pyc
+│   │   │   │   │   │   space.cpython-310.pyc
+│   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   dataset.cpython-310.pyc
+│   │   │   │   │   dataset.py
+│   │   │   │   │   space.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   savers
+│   │   │   │   │   │   save_pkl.py
+│   │   │   │   │   │   save_str.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   save_json.cpython-310.pyc
+│   │   │   │   │   │   │   save_pkl.cpython-310.pyc
+│   │   │   │   │   │   │   save_str.cpython-310.pyc
+│   │   │   │   │   │   │   save_pd.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   save_json.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   save_pd.py
+│   │   │   │   │   features
+│   │   │   │   │   │   infer_types.py
+│   │   │   │   │   │   feature_metadata.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   infer_types.cpython-310.pyc
+│   │   │   │   │   │   │   types.cpython-310.pyc
+│   │   │   │   │   │   │   feature_metadata.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   types.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   model_filter
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   _model_filter.cpython-310.pyc
+│   │   │   │   │   │   _model_filter.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   version.py
+│   │   │   autogluon.common.egg-info
+│   │   │   │   PKG-INFO
+│   │   │   │   namespace_packages.txt
+│   │   │   │   dependency_links.txt
+│   │   │   │   zip-safe
+│   │   │   │   SOURCES.txt
+│   │   │   │   top_level.txt
+│   │   │   │   requires.txt
+│   │   tests
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   unittests
+│   │   │   │   test_setup_outputdir.py
+│   │   │   │   test_path_converter.py
+│   │   │   │   test_hash_pandas_df.py
+│   │   │   │   test_memory_limit.py
+│   │   │   │   test_s3_utils.py
+│   │   │   │   utils
+│   │   │   │   │   test_compare_autogluon_metadata.py
+│   │   │   │   │   test_cpu_detection.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_log_utils.py
+│   │   │   │   test_deprecated_utils.py
+│   │   │   │   test_model_filter.py
+│   │   │   │   test_dataset.py
+│   │   │   │   test_version.py
+│   │   │   │   test_compression_utils.py
+│   │   │   │   __init__.py
+│   │   │   │   test_import_version.py
+│   │   │   __init__.py
+│   │   setup.py
+│   docs
+│   │   install-windows-generic.md
+│   │   install-windows-cpu.md
+│   │   install-modules.md
+│   │   install-cpu-source.md
+│   │   install-mac-cpu-source.md
+│   │   whats_new
+│   │   │   v0.6.0.md
+│   │   │   v0.4.2.md
+│   │   │   v0.7.0.md
+│   │   │   v1.1.1.md
+│   │   │   v0.8.3.md
+│   │   │   v1.3.0.md
+│   │   │   v0.6.2.md
+│   │   │   v0.6.1.md
+│   │   │   v1.0.0.md
+│   │   │   v1.2.0.md
+│   │   │   v0.5.1.md
+│   │   │   index.md
+│   │   │   v0.4.1.md
+│   │   │   v0.4.0.md
+│   │   │   v0.8.1.md
+│   │   │   v0.8.0.md
+│   │   │   v1.1.0.md
+│   │   │   v1.4.0.md
+│   │   │   v1.3.1.md
+│   │   │   v0.8.2.md
+│   │   │   v0.4.3.md
+│   │   │   v0.5.2.md
+│   │   README.md
+│   │   static
+│   │   │   managed_solutions.html
+│   │   │   images
+│   │   │   │   sagemaker_autopilot.png
+│   │   install-windows-conda-gpu.md
+│   │   install-gpu-source.md
+│   │   LICENSE
+│   │   versions.rst
+│   │   install-mac-conda.md
+│   │   .gitignore
+│   │   install-cpu-pip.md
+│   │   install.md
+│   │   build_doc.sh
+│   │   install-gpu-pip.md
+│   │   requirements_doc.txt
+│   │   install-mac-cpu.md
+│   │   build.yml
+│   │   cheatsheet.md
+│   │   index.md
+│   │   install-cpu-uv.md
+│   │   install-mac-libomp.md
+│   │   tutorials
+│   │   │   timeseries
+│   │   │   │   advanced
+│   │   │   │   │   forecasting-custom-model.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   forecasting-quick-start.ipynb
+│   │   │   │   forecasting-chronos.ipynb
+│   │   │   │   forecasting-model-zoo.md
+│   │   │   │   model_zoo
+│   │   │   │   │   index.md
+│   │   │   │   index.md
+│   │   │   │   forecasting-ensembles.md
+│   │   │   │   forecasting-metrics.md
+│   │   │   │   forecasting-faq.md
+│   │   │   │   forecasting-indepth.ipynb
+│   │   │   multimodal
+│   │   │   │   advanced_topics
+│   │   │   │   │   continuous_training.ipynb
+│   │   │   │   │   model_distillation.ipynb
+│   │   │   │   │   focal_loss.ipynb
+│   │   │   │   │   presets.ipynb
+│   │   │   │   │   efficient_finetuning_basic.ipynb
+│   │   │   │   │   problem_types_and_metrics.ipynb
+│   │   │   │   │   multiple_label_columns.ipynb
+│   │   │   │   │   tensorrt.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   │   hyperparameter_optimization.ipynb
+│   │   │   │   │   few_shot_learning.ipynb
+│   │   │   │   │   customization.ipynb
+│   │   │   │   text_prediction
+│   │   │   │   │   multilingual_text.ipynb
+│   │   │   │   │   ner.ipynb
+│   │   │   │   │   chinese_ner.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   │   beginner_text.ipynb
+│   │   │   │   image_prediction
+│   │   │   │   │   beginner_image_cls.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   │   clip_zeroshot.ipynb
+│   │   │   │   document_prediction
+│   │   │   │   │   pdf_classification.ipynb
+│   │   │   │   │   document_classification.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   multimodal-faq.md
+│   │   │   │   object_detection
+│   │   │   │   │   advanced
+│   │   │   │   │   │   finetune_coco.ipynb
+│   │   │   │   │   │   index.md
+│   │   │   │   │   data_preparation
+│   │   │   │   │   │   prepare_watercolor.ipynb
+│   │   │   │   │   │   prepare_pothole.ipynb
+│   │   │   │   │   │   object_detection_with_dataframe.ipynb
+│   │   │   │   │   │   prepare_coco17.ipynb
+│   │   │   │   │   │   voc_to_coco.ipynb
+│   │   │   │   │   │   index.md
+│   │   │   │   │   │   prepare_voc.ipynb
+│   │   │   │   │   │   convert_data_to_coco_format.ipynb
+│   │   │   │   │   quick_start
+│   │   │   │   │   │   index.md
+│   │   │   │   │   │   quick_start_coco.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   index.md
+│   │   │   │   image_segmentation
+│   │   │   │   │   beginner_semantic_seg.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   multimodal_prediction
+│   │   │   │   │   beginner_multimodal.ipynb
+│   │   │   │   │   multimodal_text_tabular.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   │   multimodal-quick-start.ipynb
+│   │   │   │   │   multimodal_ner.ipynb
+│   │   │   │   semantic_matching
+│   │   │   │   │   text2text_matching.ipynb
+│   │   │   │   │   image_text_matching.ipynb
+│   │   │   │   │   zero_shot_img_txt_matching.ipynb
+│   │   │   │   │   image2image_matching.ipynb
+│   │   │   │   │   text_semantic_search.ipynb
+│   │   │   │   │   index.md
+│   │   │   tabular
+│   │   │   │   how-it-works.md
+│   │   │   │   tabular-foundational-models.ipynb
+│   │   │   │   advanced
+│   │   │   │   │   tabular-custom-model.ipynb
+│   │   │   │   │   tabular-kaggle.ipynb
+│   │   │   │   │   tabular-custom-metric.ipynb
+│   │   │   │   │   tabular-deployment.ipynb
+│   │   │   │   │   tabular-multilabel.ipynb
+│   │   │   │   │   tabular-custom-model-advanced.ipynb
+│   │   │   │   │   index.md
+│   │   │   │   │   tabular-gpu.ipynb
+│   │   │   │   tabular-quick-start.ipynb
+│   │   │   │   tabular-feature-engineering.ipynb
+│   │   │   │   tabular-multimodal.ipynb
+│   │   │   │   tabular-indepth.ipynb
+│   │   │   │   index.md
+│   │   │   │   tabular-faq.md
+│   │   │   │   tabular-essentials.ipynb
+│   │   │   cloud_fit_deploy
+│   │   │   │   autogluon-cloud.md
+│   │   │   │   cloud-aws-sagemaker-train-deploy.ipynb
+│   │   │   │   autopilot-autogluon.ipynb
+│   │   │   │   index.md
+│   │   │   │   cloud-aws-lambda-deployment.ipynb
+│   │   │   eda
+│   │   │   │   eda-auto-anomaly-detection.ipynb
+│   │   │   │   eda-auto-target-analysis.ipynb
+│   │   │   │   references
+│   │   │   │   │   autogluon.eda.auto.md
+│   │   │   │   │   autogluon.eda.base-apis.md
+│   │   │   │   │   index.md
+│   │   │   │   eda-auto-quick-fit.ipynb
+│   │   │   │   eda-auto-covariate-shift.ipynb
+│   │   │   │   index.md
+│   │   │   │   components
+│   │   │   │   │   autogluon.eda.shift.md
+│   │   │   │   │   autogluon.eda.model.md
+│   │   │   │   │   autogluon.eda.explain.md
+│   │   │   │   │   autogluon.eda.dataset.md
+│   │   │   │   │   autogluon.eda.anomaly.md
+│   │   │   │   │   autogluon.eda.transform.md
+│   │   │   │   │   index.md
+│   │   │   │   │   autogluon.eda.missing.md
+│   │   │   │   │   autogluon.eda.interaction.md
+│   │   │   │   eda-auto-dataset-overview.ipynb
+│   │   │   │   eda-auto-analyze-interaction.ipynb
+│   │   build_pip_install.sh
+│   │   api
+│   │   │   autogluon.common.space.rst
+│   │   │   autogluon.features.rst
+│   │   │   autogluon.tabular.models.rst
+│   │   install-windows-gpu.md
+│   │   _static
+│   │   │   autogluon.png
+│   │   │   autogluon-s.png
+│   │   │   autogluon-logo.jpg
+│   │   │   favicon.ico
+│   │   │   autogluon-w.png
+│   │   │   custom.css
+│   │   │   custom.js
+│   │   install-mac-nogpu.md
+│   │   api.rst
+│   │   _templates
+│   │   │   autosummary
+│   │   │   │   base.rst
+│   │   │   │   class.rst
+│   │   │   │   module.rst
+│   │   │   custom_class.rst
+│   │   install-conda-full.md
+│   │   install-linux-conda-gpu.md
+│   │   install-gpu-uv.md
+│   │   conf.py
+│   .github
+│   │   actions
+│   │   │   submit-job
+│   │   │   │   action.yml
+│   │   │   setup-env-vars
+│   │   │   │   action.yml
+│   │   │   free-disk-space
+│   │   │   │   action.yml
+│   │   │   test-cloud
+│   │   │   │   action.yml
+│   │   workflow_scripts
+│   │   │   test_common.sh
+│   │   │   test_timeseries.sh
+│   │   │   test_install_windows.sh
+│   │   │   build_tabular_prediction_tutorial.sh
+│   │   │   build_all_docs.sh
+│   │   │   lint_check.sh
+│   │   │   build_cloud_fit_deploy_tutorial.sh
+│   │   │   build_timeseries_tutorial.sh
+│   │   │   env_setup.sh
+│   │   │   run_benchmark.sh
+│   │   │   test_multimodal.sh
+│   │   │   test_multimodal_others.sh
+│   │   │   test_tabular.sh
+│   │   │   test_multimodal_others_2.sh
+│   │   │   build_multimodal_tutorial.sh
+│   │   │   setup_mmcv.sh
+│   │   │   test_install.sh
+│   │   │   build_doc.sh
+│   │   │   version_diff.sh
+│   │   │   setup_hf_model_mirror.py
+│   │   │   write_to_s3.sh
+│   │   │   test_multimodal_predictor.sh
+│   │   │   test_eda.sh
+│   │   │   test_features.sh
+│   │   │   copy_docs.sh
+│   │   │   build_eda_tutorial.sh
+│   │   │   test_core.sh
+│   │   PULL_REQUEST_TEMPLATE.md
+│   │   workflows_env
+│   │   │   unittest_env.yml
+│   │   workflows
+│   │   │   README.md
+│   │   │   platform_tests-command.yml
+│   │   │   benchmark_master.yml
+│   │   │   continuous_integration.yml
+│   │   │   slash_command_dispatch.yml
+│   │   │   codeguru-reviewer.yml
+│   │   │   codespell.yml
+│   │   │   pypi_release.yml
+│   │   │   codeql.yml
+│   │   │   benchmark-command.yml
+│   │   │   check_hf_model_list.yml
+│   │   │   pythonpublish_testpypi.yml
+│   │   │   continuous_integration_multigpu.yaml
+│   │   │   build_latest_image.yml
+│   │   │   pythonpublish.yml
+│   │   ISSUE_TEMPLATE
+│   │   │   bug_report.md
+│   │   │   feature_request.md
+│   │   │   doc_improvement.yml
+│   │   │   config.yml
+│   full_install.sh
+│   SECURITY.md
+│   eda
+│   │   src
+│   │   │   autogluon
+│   │   │   │   eda
+│   │   │   │   │   utils
+│   │   │   │   │   │   common.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   defaults.py
+│   │   │   │   │   analysis
+│   │   │   │   │   │   transform.py
+│   │   │   │   │   │   model.py
+│   │   │   │   │   │   base.py
+│   │   │   │   │   │   anomaly.py
+│   │   │   │   │   │   missing.py
+│   │   │   │   │   │   interaction.py
+│   │   │   │   │   │   dataset.py
+│   │   │   │   │   │   explain.py
+│   │   │   │   │   │   shift.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   auto
+│   │   │   │   │   │   simple.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   visualization
+│   │   │   │   │   │   model.py
+│   │   │   │   │   │   base.py
+│   │   │   │   │   │   anomaly.py
+│   │   │   │   │   │   layouts.py
+│   │   │   │   │   │   missing.py
+│   │   │   │   │   │   interaction.py
+│   │   │   │   │   │   dataset.py
+│   │   │   │   │   │   explain.py
+│   │   │   │   │   │   shift.py
+│   │   │   │   │   │   jupyter.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   state.py
+│   │   tests
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   unittests
+│   │   │   │   analysis
+│   │   │   │   │   test_missing.py
+│   │   │   │   │   test_interaction.py
+│   │   │   │   │   test_anomaly.py
+│   │   │   │   │   test_dataset.py
+│   │   │   │   │   test_base.py
+│   │   │   │   │   test_transform.py
+│   │   │   │   │   test_explain.py
+│   │   │   │   │   test_model.py
+│   │   │   │   │   __init__.py
+│   │   │   │   auto
+│   │   │   │   │   test_simple.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_state.py
+│   │   │   │   __init__.py
+│   │   │   │   test_shift.py
+│   │   │   │   visualization
+│   │   │   │   │   test_missing.py
+│   │   │   │   │   test_interaction.py
+│   │   │   │   │   test_layouts.py
+│   │   │   │   │   test_anomaly.py
+│   │   │   │   │   test_dataset.py
+│   │   │   │   │   test_base.py
+│   │   │   │   │   test_explain.py
+│   │   │   │   │   test_model.py
+│   │   │   │   │   __init__.py
+│   │   │   │   resources
+│   │   │   │   │   adult
+│   │   │   │   │   │   test_data.csv
+│   │   │   │   │   │   train_data.csv
+│   │   │   │   │   houses
+│   │   │   │   │   │   test_data.csv
+│   │   │   │   │   │   train_data.csv
+│   │   │   __init__.py
+│   │   setup.cfg
+│   │   setup.py
+│   setup.cfg
+│   features
+│   │   src
+│   │   │   autogluon
+│   │   │   │   features
+│   │   │   │   │   generators
+│   │   │   │   │   │   drop_unique.py
+│   │   │   │   │   │   drop_duplicates.py
+│   │   │   │   │   │   rename.py
+│   │   │   │   │   │   memory_minimize.py
+│   │   │   │   │   │   bulk.py
+│   │   │   │   │   │   category.py
+│   │   │   │   │   │   dummy.py
+│   │   │   │   │   │   fillna.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   drop_unique.cpython-310.pyc
+│   │   │   │   │   │   │   rename.cpython-310.pyc
+│   │   │   │   │   │   │   category.cpython-310.pyc
+│   │   │   │   │   │   │   text_special.cpython-310.pyc
+│   │   │   │   │   │   │   pipeline.cpython-310.pyc
+│   │   │   │   │   │   │   one_hot_encoder.cpython-310.pyc
+│   │   │   │   │   │   │   drop_duplicates.cpython-310.pyc
+│   │   │   │   │   │   │   memory_minimize.cpython-310.pyc
+│   │   │   │   │   │   │   fillna.cpython-310.pyc
+│   │   │   │   │   │   │   text_ngram.cpython-310.pyc
+│   │   │   │   │   │   │   isnan.cpython-310.pyc
+│   │   │   │   │   │   │   abstract.cpython-310.pyc
+│   │   │   │   │   │   │   datetime.cpython-310.pyc
+│   │   │   │   │   │   │   binned.cpython-310.pyc
+│   │   │   │   │   │   │   bulk.cpython-310.pyc
+│   │   │   │   │   │   │   astype.cpython-310.pyc
+│   │   │   │   │   │   │   label_encoder.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   identity.cpython-310.pyc
+│   │   │   │   │   │   │   dummy.cpython-310.pyc
+│   │   │   │   │   │   │   auto_ml_pipeline.cpython-310.pyc
+│   │   │   │   │   │   datetime.py
+│   │   │   │   │   │   pipeline.py
+│   │   │   │   │   │   text_ngram.py
+│   │   │   │   │   │   isnan.py
+│   │   │   │   │   │   label_encoder.py
+│   │   │   │   │   │   one_hot_encoder.py
+│   │   │   │   │   │   astype.py
+│   │   │   │   │   │   identity.py
+│   │   │   │   │   │   text_special.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   binned.py
+│   │   │   │   │   │   abstract.py
+│   │   │   │   │   │   auto_ml_pipeline.py
+│   │   │   │   │   vectorizers.py
+│   │   │   │   │   binning.py
+│   │   │   │   │   utils.py
+│   │   │   │   │   __pycache__
+│   │   │   │   │   │   version.cpython-310.pyc
+│   │   │   │   │   │   binning.cpython-310.pyc
+│   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   vectorizers.cpython-310.pyc
+│   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   __init__.py
+│   │   │   │   │   version.py
+│   │   │   autogluon.features.egg-info
+│   │   │   │   PKG-INFO
+│   │   │   │   namespace_packages.txt
+│   │   │   │   dependency_links.txt
+│   │   │   │   zip-safe
+│   │   │   │   SOURCES.txt
+│   │   │   │   top_level.txt
+│   │   │   │   requires.txt
+│   │   tests
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   __init__.py
+│   │   │   features
+│   │   │   │   generators
+│   │   │   │   │   test_fillna.py
+│   │   │   │   │   test_label_encoder.py
+│   │   │   │   │   test_text_special.py
+│   │   │   │   │   test_drop_duplicates.py
+│   │   │   │   │   test_isnan.py
+│   │   │   │   │   test_astype.py
+│   │   │   │   │   test_bulk.py
+│   │   │   │   │   test_category.py
+│   │   │   │   │   test_pipeline.py
+│   │   │   │   │   test_datetime.py
+│   │   │   │   │   test_auto_ml_pipeline.py
+│   │   │   │   │   test_text_ngram.py
+│   │   │   │   │   test_dummy.py
+│   │   │   │   │   test_one_hot_encoder.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_identity.py
+│   │   │   │   │   test_rename.py
+│   │   │   │   test_utils.py
+│   │   │   │   conftest.py
+│   │   │   │   __init__.py
+│   │   │   │   test_feature_metadata.py
+│   │   setup.py
+│   .vscode
+│   core
+│   │   src
+│   │   │   autogluon
+│   │   │   │   core
+│   │   │   │   │   stacked_overfitting
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   scheduler
+│   │   │   │   │   │   reporter.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   scheduler_factory.cpython-310.pyc
+│   │   │   │   │   │   │   seq_scheduler.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   reporter.cpython-310.pyc
+│   │   │   │   │   │   scheduler_factory.py
+│   │   │   │   │   │   seq_scheduler.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   constants.py
+│   │   │   │   │   models
+│   │   │   │   │   │   greedy_ensemble
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   greedy_weighted_ensemble_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   ensemble_selection.cpython-310.pyc
+│   │   │   │   │   │   │   ensemble_selection.py
+│   │   │   │   │   │   │   greedy_weighted_ensemble_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   _utils.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   _utils.py
+│   │   │   │   │   │   ensemble
+│   │   │   │   │   │   │   weighted_ensemble_model.py
+│   │   │   │   │   │   │   ray_parallel_fold_fitting_strategy.py
+│   │   │   │   │   │   │   fold_fitting_strategy.py
+│   │   │   │   │   │   │   bagged_ensemble_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   bagged_ensemble_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   stacker_ensemble_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   weighted_ensemble_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   │   fold_fitting_strategy.cpython-310.pyc
+│   │   │   │   │   │   │   stacker_ensemble_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   dummy
+│   │   │   │   │   │   │   _dummy_quantile_regressor.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   _dummy_quantile_regressor.cpython-310.pyc
+│   │   │   │   │   │   │   │   dummy_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   dummy_model.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   abstract
+│   │   │   │   │   │   │   _tags.py
+│   │   │   │   │   │   │   abstract_nn_model.py
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   abstract_nn_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   abstract_model.cpython-310.pyc
+│   │   │   │   │   │   │   │   model_trial.cpython-310.pyc
+│   │   │   │   │   │   │   │   _tags.cpython-310.pyc
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   model_trial.py
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   │   abstract_model.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   problem_type.py
+│   │   │   │   │   hpo
+│   │   │   │   │   │   space_converter.py
+│   │   │   │   │   │   constants.py
+│   │   │   │   │   │   ray_tune_searcher_factory.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   executors.cpython-310.pyc
+│   │   │   │   │   │   │   constants.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   exceptions.cpython-310.pyc
+│   │   │   │   │   │   ray_tune_scheduler.py
+│   │   │   │   │   │   executors.py
+│   │   │   │   │   │   ray_tune_scheduler_factory.py
+│   │   │   │   │   │   ray_tune_constants.py
+│   │   │   │   │   │   exceptions.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   ray_hpo.py
+│   │   │   │   │   utils
+│   │   │   │   │   │   version_utils.py
+│   │   │   │   │   │   early_stopping.py
+│   │   │   │   │   │   miscs.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   loaders
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   plots.py
+│   │   │   │   │   │   time.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   feature_selection.cpython-310.pyc
+│   │   │   │   │   │   │   version_utils.cpython-310.pyc
+│   │   │   │   │   │   │   plots.cpython-310.pyc
+│   │   │   │   │   │   │   time.cpython-310.pyc
+│   │   │   │   │   │   │   files.cpython-310.pyc
+│   │   │   │   │   │   │   decorators.cpython-310.pyc
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   early_stopping.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   miscs.cpython-310.pyc
+│   │   │   │   │   │   │   exceptions.cpython-310.pyc
+│   │   │   │   │   │   files.py
+│   │   │   │   │   │   infer_utils.py
+│   │   │   │   │   │   exceptions.py
+│   │   │   │   │   │   feature_selection.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   decorators.py
+│   │   │   │   │   │   savers
+│   │   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.py
+│   │   │   │   │   __pycache__
+│   │   │   │   │   │   version.cpython-310.pyc
+│   │   │   │   │   │   constants.cpython-310.pyc
+│   │   │   │   │   │   problem_type.cpython-310.pyc
+│   │   │   │   │   │   _setup_utils.cpython-310.pyc
+│   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   searcher
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   local_searcher.cpython-310.pyc
+│   │   │   │   │   │   │   local_grid_searcher.cpython-310.pyc
+│   │   │   │   │   │   │   local_random_searcher.cpython-310.pyc
+│   │   │   │   │   │   │   dummy_searcher.cpython-310.pyc
+│   │   │   │   │   │   │   searcher_factory.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   exceptions.cpython-310.pyc
+│   │   │   │   │   │   dummy_searcher.py
+│   │   │   │   │   │   local_random_searcher.py
+│   │   │   │   │   │   searcher_factory.py
+│   │   │   │   │   │   exceptions.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   local_grid_searcher.py
+│   │   │   │   │   │   local_searcher.py
+│   │   │   │   │   _setup_utils.py
+│   │   │   │   │   data
+│   │   │   │   │   │   label_cleaner.py
+│   │   │   │   │   │   cleaner.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   cleaner.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   label_cleaner.cpython-310.pyc
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   metrics
+│   │   │   │   │   │   classification_metrics.py
+│   │   │   │   │   │   softclass_metrics.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   quantile_metrics.cpython-310.pyc
+│   │   │   │   │   │   │   score_func.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   classification_metrics.cpython-310.pyc
+│   │   │   │   │   │   quantile_metrics.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   score_func.py
+│   │   │   │   │   augmentation
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   distill_utils.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   distill_utils.py
+│   │   │   │   │   learning_curves
+│   │   │   │   │   │   plot_curves.py
+│   │   │   │   │   callbacks
+│   │   │   │   │   │   _example_callback.py
+│   │   │   │   │   │   _abstract_callback.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   _early_stopping_ensemble_callback.cpython-310.pyc
+│   │   │   │   │   │   │   _early_stopping_callback.cpython-310.pyc
+│   │   │   │   │   │   │   _abstract_callback.cpython-310.pyc
+│   │   │   │   │   │   │   _example_callback.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   _early_stopping_callback.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   _early_stopping_ensemble_callback.py
+│   │   │   │   │   ray
+│   │   │   │   │   │   distributed_jobs_managers.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   distributed_jobs_managers.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   │   resources_calculator.cpython-310.pyc
+│   │   │   │   │   │   resources_calculator.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   pseudolabeling
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   pseudolabeling.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   pseudolabeling.py
+│   │   │   │   │   learner
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   abstract_learner.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   abstract_learner.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   calibrate
+│   │   │   │   │   │   _decision_threshold.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   temperature_scaling.cpython-310.pyc
+│   │   │   │   │   │   │   _decision_threshold.cpython-310.pyc
+│   │   │   │   │   │   │   conformity_score.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   conformity_score.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   temperature_scaling.py
+│   │   │   │   │   trainer
+│   │   │   │   │   │   abstract_trainer.py
+│   │   │   │   │   │   utils.py
+│   │   │   │   │   │   __pycache__
+│   │   │   │   │   │   │   abstract_trainer.cpython-310.pyc
+│   │   │   │   │   │   │   utils.cpython-310.pyc
+│   │   │   │   │   │   │   __init__.cpython-310.pyc
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   version.py
+│   │   │   autogluon.core.egg-info
+│   │   │   │   PKG-INFO
+│   │   │   │   namespace_packages.txt
+│   │   │   │   dependency_links.txt
+│   │   │   │   zip-safe
+│   │   │   │   SOURCES.txt
+│   │   │   │   top_level.txt
+│   │   │   │   requires.txt
+│   │   tests
+│   │   │   conftest.py
+│   │   │   test_check_style.py
+│   │   │   unittests
+│   │   │   │   test_parallel_local_folding.py
+│   │   │   │   scheduler
+│   │   │   │   │   test_seq_scheduler.py
+│   │   │   │   │   test_scheduler.py
+│   │   │   │   │   __init__.py
+│   │   │   │   models
+│   │   │   │   │   abstract_model
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   │   test_init_user_params.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_bagged_ensemble_model.py
+│   │   │   │   hpo
+│   │   │   │   │   test_ray_hpo.py
+│   │   │   │   │   test_space_converter.py
+│   │   │   │   │   __init__.py
+│   │   │   │   utils
+│   │   │   │   │   decorators
+│   │   │   │   │   │   test_presets.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   test_time.py
+│   │   │   │   │   test_utils.py
+│   │   │   │   │   test_version_utils.py
+│   │   │   │   │   __init__.py
+│   │   │   │   searcher
+│   │   │   │   │   test_local_grid_searcher.py
+│   │   │   │   │   __init__.py
+│   │   │   │   │   test_local_random_searcher.py
+│   │   │   │   │   test_local_searcher.py
+│   │   │   │   metrics
+│   │   │   │   │   test_metrics.py
+│   │   │   │   │   test_metric_kwargs.py
+│   │   │   │   │   test_quantile_metrics.py
+│   │   │   │   │   test_classification_metrics.py
+│   │   │   │   │   __init__.py
+│   │   │   │   ray
+│   │   │   │   │   test_resource_calculator.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_search_space.py
+│   │   │   │   __init__.py
+│   │   │   │   calibrate
+│   │   │   │   │   test_decision_threshold.py
+│   │   │   │   │   __init__.py
+│   │   │   │   test_import_version.py
+│   │   │   │   test_feature_selection.py
+│   │   │   │   core
+│   │   │   │   │   scheduler
+│   │   │   │   │   │   test_scheduler_factory.py
+│   │   │   │   │   │   __init__.py
+│   │   │   │   │   __init__.py
+│   │   │   __init__.py
+│   │   setup.py

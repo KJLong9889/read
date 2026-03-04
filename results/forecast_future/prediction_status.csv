@@ -1,0 +1,2 @@
+﻿filename,status,start_date,end_date,models_trained,best_model
+just.csv,Success,2025-11-25,2025-12-01,1,MovingAverageInterpolation
